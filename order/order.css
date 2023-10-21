@@ -1,0 +1,86 @@
+  * {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+  }
+  div.container{
+    width: 90%;
+    margin: 20px auto;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+  }
+  
+  div.gallery img {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 100%;
+  }
+  
+  div.desc {
+    text-align: center;
+    line-height: 30px;
+  }
+  .text{
+    position: relative;
+  }
+  .line::after{
+    content: '_';
+    position: absolute;
+    top: 5px;
+  }
+  div.desc p{
+    color: rgba(0, 0, 0, 0.575);
+  }
+  .responsive {
+    width: 30%;
+    padding: 10px 10px;
+  }  
+  .row-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn{
+    background: black;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: rgba(0, 0, 0, 0.8);
+
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 50%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .row-1{
+        flex-direction: column;
+    }
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
